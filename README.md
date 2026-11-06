@@ -13,6 +13,7 @@ Group expenses, who-owes-what, and learned spending limits/habits persisted in *
 - `tally.mjs` core (falls back to the offline `MemWalMock` without credentials)
 - `setup_account.mjs` creates a MemWalAccount + delegate key server-side (keys stay in a local secure dir, never committed)
 - `seed_memories.mjs` writes demo expenses/limits/habits via the relayer
+- `demo_recall.mjs` / `recall_verify.mjs` read-only mainnet recall demos (no writes)
 - `tatum.mjs` Tatum Sui mainnet gateway (GraphQL): balances + incoming USDC settlements; `Tally.reconcile()` auto-closes debts
 - `./run.sh mainnet|testnet <script.mjs>` loads secrets from `/workspace/secure` and sets the relayer URL
 - `node test.mjs`, `node test_tatum.mjs` (TATUM_LIVE=1 for a live gateway check via `./run.sh`)
