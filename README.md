@@ -17,4 +17,6 @@ Group expenses, who-owes-what, and learned spending limits/habits persisted in *
 - `./run.sh mainnet|testnet <script.mjs>` loads secrets from `/workspace/secure` and sets the relayer URL
 - `node test.mjs`, `node test_tatum.mjs` (TATUM_LIVE=1 for a live gateway check via `./run.sh`)
 
+Working GitHub mirror (pushable): https://github.com/astra-tc/tally-total-recall (fork of astratc/tally-total-recall; parent push blocked by unverified email).
+
 Contact: carl.astratc@proton.me
